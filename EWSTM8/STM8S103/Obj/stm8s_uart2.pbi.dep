@@ -1,0 +1,24 @@
+stm8s_uart2.pbi: \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\src\stm8s_uart2.c \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_uart2.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc/stm8s.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\stm8s_conf.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_adc1.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_awu.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_beep.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_clk.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_exti.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_flash.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_gpio.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_i2c.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_itc.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_iwdg.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_rst.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_spi.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim1.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim2.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_tim4.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_uart1.h \
+  D:\prog\STM8FIrst\ COller\ PWM\ LED\EWSTM8\..\Config\STM8S_StdPeriph_Lib\Libraries\STM8S_StdPeriph_Driver\inc\stm8s_wwdg.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
