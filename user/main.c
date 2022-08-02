@@ -56,14 +56,14 @@ void main(void)
     {
       Button_tik++;
       GPIO_WriteReverse(GPIOD, GPIO_PIN_3);      // show manipulations with button  -+
-    Delay(10000);
+    Delay(5000);
     }
    
         if (GPIO_ReadInputPin(GPIOC,BUT_DOWN_PIN) == 0 && Button_tik >10)  // interupt button down
         {
           Button_tik--;
          GPIO_WriteReverse(GPIOD, GPIO_PIN_3);   // show manipulations with button  -+
-        Delay(10000);
+        Delay(5000);
         }
 PWM_PINC3(Button_tik); //  duty cycle PWM
   }
