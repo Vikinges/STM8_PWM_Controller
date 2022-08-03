@@ -28,7 +28,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-uint16_t Button_tik=20; //speed PWM button or + or - 
+uint16_t Button_tik=10; //speed PWM button or + or - 
 /* Private function prototypes -----------------------------------------------*/
 void Delay (uint16_t nCount); // simple delay 
 void PWM_PINC3(uint16_t speed_100_67_10000_99 ); // function to make PWM 
@@ -72,46 +72,47 @@ void main(void)
          GPIO_WriteReverse(GPIOD, GPIO_PIN_3);   // show manipulations with button  -+
         Delay(5000);
         }
-PWM_PINC3(Button_tik); //  duty cycle PWM
+
  
 
   /** Switsh Leds show how much duty have PWM 
-    * White > 15% green > 35% yelow > 60% red > 90% 
+    * White > 15% green > 35% yellow > 60% red > 90% 
     */
 
          switch( Button_tik ) 
          {
-          case 10 || 100:
+          case  10 :
           GPIO_WriteHigh(GPIOA,GPIO_PIN_3);
           GPIO_WriteLow(GPIOA,GPIO_PIN_2);
           GPIO_WriteLow(GPIOA,GPIO_PIN_1);
           GPIO_WriteLow(GPIOD,GPIO_PIN_6);
           break;
-          case 1500 :
+          case 150 :
           GPIO_WriteLow(GPIOA,GPIO_PIN_3);
           GPIO_WriteHigh(GPIOA,GPIO_PIN_2);
           GPIO_WriteLow(GPIOA,GPIO_PIN_1);
           GPIO_WriteLow(GPIOD,GPIO_PIN_6);
           break;
-          case 3500 :
+          case 350 :
           GPIO_WriteLow(GPIOA,GPIO_PIN_3);
           GPIO_WriteLow(GPIOA,GPIO_PIN_2);
           GPIO_WriteHigh(GPIOA,GPIO_PIN_1);
           GPIO_WriteLow(GPIOD,GPIO_PIN_6);
           break;
-          case 6000 :
+          case 600 :
           GPIO_WriteLow(GPIOA,GPIO_PIN_3);
           GPIO_WriteLow(GPIOA,GPIO_PIN_2);
           GPIO_WriteHigh(GPIOA,GPIO_PIN_1);
           GPIO_WriteLow(GPIOD,GPIO_PIN_6);
           break; 
-          case 9000 :
+          case 900 :
           GPIO_WriteLow(GPIOA,GPIO_PIN_3);
           GPIO_WriteLow(GPIOA,GPIO_PIN_2);
           GPIO_WriteLow(GPIOA,GPIO_PIN_1);
           GPIO_WriteHigh(GPIOD,GPIO_PIN_6);
           break;
          }
+  PWM_PINC3(Button_tik); //  duty cycle PWM
   }
 }
 
