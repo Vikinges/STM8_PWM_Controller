@@ -48422,7 +48422,7 @@
     "display": "void Delay(uint16_t)",
     "location": {
       "column": "6",
-      "line": "77",
+      "line": "123",
       "path": "D:\\prog\\STM8FIrst COller PWM LED\\user\\main.c"
     },
     "name": "Delay",
@@ -48436,7 +48436,7 @@
     "display": "void PWM_PINC3(uint16_t)",
     "location": {
       "column": "6",
-      "line": "86",
+      "line": "132",
       "path": "D:\\prog\\STM8FIrst COller PWM LED\\user\\main.c"
     },
     "name": "PWM_PINC3",
@@ -48444,13 +48444,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2783@F@PWM_PINC3@speed",
+    "ID": "c:main.c@4490@F@PWM_PINC3@speed",
     "What": "Variable",
     "defdec": "Def",
     "display": "speed",
     "location": {
       "column": "12",
-      "line": "88",
+      "line": "134",
       "path": "D:\\prog\\STM8FIrst COller PWM LED\\user\\main.c"
     },
     "name": "speed",
@@ -48464,7 +48464,7 @@
     "display": "void assert_failed(uint8_t *, uint32_t)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "153",
       "path": "D:\\prog\\STM8FIrst COller PWM LED\\user\\main.c"
     },
     "name": "assert_failed",

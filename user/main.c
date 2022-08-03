@@ -44,11 +44,18 @@ void main(void)
 {
   GPIO_DeInit(GPIOC);
   GPIO_DeInit(GPIOD);
+  GPIO_DeInit(GPIOA);
   /* Initialize I/Os in Output Mode */
   GPIO_Init(GPIOC, (GPIO_Pin_TypeDef)PWM_GPIO_PINS, GPIO_MODE_OUT_PP_LOW_FAST); //pin software PWM PC-3-4
   GPIO_Init(GPIOC, BUT_UP_PIN,GPIO_MODE_IN_PU_IT);         // pin button UP PC7
   GPIO_Init(GPIOC, BUT_DOWN_PIN,GPIO_MODE_IN_PU_IT);       // pin button down PC6
-  GPIO_Init(GPIOD, GPIO_PIN_3,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PD3
+  GPIO_Init(GPIOD, GPIO_PIN_3,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PD3 toogle pin in board 
+  GPIO_Init(GPIOA, GPIO_PIN_3,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PA3 toogle pin white led  
+  GPIO_Init(GPIOA, GPIO_PIN_2,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PA2 toogle pin Green Led 
+  GPIO_Init(GPIOA, GPIO_PIN_1,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PA1 toogle pin Yellow Led 
+  GPIO_Init(GPIOD, GPIO_PIN_6,GPIO_MODE_OUT_PP_LOW_SLOW);  // Led pin PD6 toogle pin Red Led  
+  
+
   while (1)
   {
   
@@ -66,6 +73,45 @@ void main(void)
         Delay(5000);
         }
 PWM_PINC3(Button_tik); //  duty cycle PWM
+ 
+
+  /** Switsh Leds show how much duty have PWM 
+    * White > 15% green > 35% yelow > 60% red > 90% 
+    */
+
+         switch( Button_tik ) 
+         {
+          case 10 || 100:
+          GPIO_WriteHigh(GPIOA,GPIO_PIN_3);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_2);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_1);
+          GPIO_WriteLow(GPIOD,GPIO_PIN_6);
+          break;
+          case 1500 :
+          GPIO_WriteLow(GPIOA,GPIO_PIN_3);
+          GPIO_WriteHigh(GPIOA,GPIO_PIN_2);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_1);
+          GPIO_WriteLow(GPIOD,GPIO_PIN_6);
+          break;
+          case 3500 :
+          GPIO_WriteLow(GPIOA,GPIO_PIN_3);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_2);
+          GPIO_WriteHigh(GPIOA,GPIO_PIN_1);
+          GPIO_WriteLow(GPIOD,GPIO_PIN_6);
+          break;
+          case 6000 :
+          GPIO_WriteLow(GPIOA,GPIO_PIN_3);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_2);
+          GPIO_WriteHigh(GPIOA,GPIO_PIN_1);
+          GPIO_WriteLow(GPIOD,GPIO_PIN_6);
+          break; 
+          case 9000 :
+          GPIO_WriteLow(GPIOA,GPIO_PIN_3);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_2);
+          GPIO_WriteLow(GPIOA,GPIO_PIN_1);
+          GPIO_WriteHigh(GPIOD,GPIO_PIN_6);
+          break;
+         }
   }
 }
 
